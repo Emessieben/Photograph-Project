@@ -14,6 +14,6 @@ export let portfolio = [{
     name: "Fashion",
     image: "https://cdn.pixabay.com/photo/2017/04/16/01/53/woman-2233820_960_720.jpg"
 },{
-    name: "Nude-Art-Shooting",
+    name: "Nude-Art",
     image: "https://cdn.pixabay.com/photo/2015/12/31/09/59/woman-1115438_960_720.jpg"
 },]
