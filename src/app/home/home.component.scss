@@ -1,0 +1,30 @@
+
+// hero section
+.parallax {
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/22/18/39/roses-1473685_960_720.jpg");
+
+    min-height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inner-hero {
+    min-height: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+// introduction section
+#introduction-section {
+    min-height: 500px;
+}
+
+// sample section
+
+// contact me section
+#contact-section {
+    min-height: 500px;
+}
