@@ -2,37 +2,50 @@
     body {
         font-size: 25px;
     }
-    .container {
-        margin: 0 auto;
+    .container-fluid {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
         background-color: #ccc;
-        .nav {
-            margin-left: .8rem;
-        }
-        .gridTop {
-            display: grid;
-            grid-template-columns: 20% auto 25%;
-            padding-top: .8rem;
-            .frmSub {
-                width: 90%;
-                .inputTxt {
-                    margin-right: .5rem;
+        .container {
+            margin: 0 auto;
+            .nav {
+                margin-left: .8rem;
+            }
+            .gridTop {
+                display: grid;
+                grid-template-columns: 20% auto 25%;
+                padding-top: .8rem;
+                .frmSub {
+                    width: 90%;
+                    .inputTxt {
+                        margin-right: .5rem;
+                    }
+                }
+                iframe {
+                    width: 13rem;
+                    height: 13rem;
+                }
+                .flex-column {
+                    width: 6rem;
+                    line-height: 2;
                 }
             }
-            iframe {
-                width: 13rem;
-                height: 13rem;
-            }
-            .flex-column {
-                width: 6rem;
-                line-height: 2;
-            }
-        }
-        .footerBot {
-            text-align: center;
-            margin: 0 auto;
-            background-color: #c8c6c6;
-            .d-flex {
-                justify-content: center;
+            .footerBot {
+                text-align: center;
+                margin: 0 auto;
+                background-color: #c8c6c6;
+                .d-flex {
+                    justify-content: center;
+                    i {
+                        opacity: 1;
+                        transition: 0.3s;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
             }
         }
     }
@@ -43,34 +56,44 @@
     body {
         font-size: 16px;
     }
-    .container {
-        margin: 0 auto;
+    .container-fluid {
         background-color: #ccc;
-        .nav {
-            margin-left: .8rem;
-            margin-bottom: .8rem;
-        }
-        .gridTop {
-            display: grid;
-            grid-template-columns: 20% auto 25%;
-            padding-top: .8rem;
-            .frmSub {
-                width: 90%;
-                .inputTxt {
-                    margin-right: .4rem;
+        .container {
+            margin: 0 auto;
+            .nav {
+                margin-left: .8rem;
+                margin-bottom: .8rem;
+            }
+            .gridTop {
+                display: grid;
+                grid-template-columns: 20% auto 25%;
+                padding-top: .8rem;
+                .frmSub {
+                    width: 90%;
+                    .inputTxt {
+                        margin-right: .4rem;
+                    }
+                }
+                .flex-column {
+                    width: 6rem;
+                    line-height: 2;
                 }
             }
-            .flex-column {
-                width: 6rem;
-                line-height: 2;
-            }
-        }
-        .footerBot {
-            text-align: center;
-            margin: 0 auto;
-            background-color: #c8c6c6;
-            .d-flex {
-                justify-content: center;
+            .footerBot {
+                text-align: center;
+                margin: 0 auto;
+                background-color: #c8c6c6;
+                .d-flex {
+                    justify-content: center;
+                    i {
+                        opacity: 1;
+                        transition: 0.3s;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
             }
         }
     }
@@ -81,43 +104,53 @@
     body {
         font-size: 16px;
     }
-    .container {
-        margin: 0 auto;
+    .container-fluid {
         background-color: #ccc;
-        .nav {
-            margin-left: .8rem;
-            font-size: smaller;
-        }
-        .gridTop {
-            display: grid;
-            grid-template-columns: 40% auto;
-            grid-template-rows: 2;
-            row-gap: 1rem;
-            margin-bottom: .8rem;
-            padding-top: .8rem;
-            h5,
-            p {
-                font-size: .8rem;
-            }
-            .frmSub {
-                width: 90%;
+        .container {
+            margin: 0 auto;
+            .nav {
+                margin-left: .8rem;
                 font-size: smaller;
-                .inputTxt {
-                    margin-bottom: .4rem;
+            }
+            .gridTop {
+                display: grid;
+                grid-template-columns: 40% auto;
+                grid-template-rows: 2;
+                row-gap: 1rem;
+                margin-bottom: .8rem;
+                padding-top: .8rem;
+                h5,
+                p {
+                    font-size: .8rem;
+                }
+                .frmSub {
+                    width: 90%;
+                    font-size: smaller;
+                    .inputTxt {
+                        margin-bottom: .4rem;
+                    }
+                }
+                .mapouter {
+                    width: 10rem;
+                    height: 10rem;
+                    // grid-area: 2/1/2/2;
                 }
             }
-            .mapouter {
-                width: 10rem;
-                height: 10rem;
-                // grid-area: 2/1/2/2;
-            }
-        }
-        .footerBot {
-            text-align: center;
-            margin: 0 auto;
-            background-color: #c8c6c6;
-            .d-flex {
-                justify-content: center;
+            .footerBot {
+                text-align: center;
+                margin: 0 auto;
+                background-color: #c8c6c6;
+                .d-flex {
+                    justify-content: center;
+                    i {
+                        opacity: 1;
+                        transition: 0.3s;
+                        cursor: pointer;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
             }
         }
     }

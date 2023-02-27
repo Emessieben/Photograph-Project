@@ -2,90 +2,115 @@
   body {
     font-size: 25px;
   }
-  .container {
-    margin: 0 auto;
+  .container-fluid {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     background-color: #ccc;
   }
-  .container .nav {
+  .container-fluid .container {
+    margin: 0 auto;
+  }
+  .container-fluid .container .nav {
     margin-left: 0.8rem;
   }
-  .container .gridTop {
+  .container-fluid .container .gridTop {
     display: grid;
     grid-template-columns: 20% auto 25%;
     padding-top: 0.8rem;
   }
-  .container .gridTop .frmSub {
+  .container-fluid .container .gridTop .frmSub {
     width: 90%;
   }
-  .container .gridTop .frmSub .inputTxt {
+  .container-fluid .container .gridTop .frmSub .inputTxt {
     margin-right: 0.5rem;
   }
-  .container .gridTop iframe {
+  .container-fluid .container .gridTop iframe {
     width: 13rem;
     height: 13rem;
   }
-  .container .gridTop .flex-column {
+  .container-fluid .container .gridTop .flex-column {
     width: 6rem;
     line-height: 2;
   }
-  .container .footerBot {
+  .container-fluid .container .footerBot {
     text-align: center;
     margin: 0 auto;
     background-color: #c8c6c6;
   }
-  .container .footerBot .d-flex {
+  .container-fluid .container .footerBot .d-flex {
     justify-content: center;
+  }
+  .container-fluid .container .footerBot .d-flex i {
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .container-fluid .container .footerBot .d-flex i:hover {
+    opacity: 0.6;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   body {
     font-size: 16px;
   }
-  .container {
-    margin: 0 auto;
+  .container-fluid {
     background-color: #ccc;
   }
-  .container .nav {
+  .container-fluid .container {
+    margin: 0 auto;
+  }
+  .container-fluid .container .nav {
     margin-left: 0.8rem;
     margin-bottom: 0.8rem;
   }
-  .container .gridTop {
+  .container-fluid .container .gridTop {
     display: grid;
     grid-template-columns: 20% auto 25%;
     padding-top: 0.8rem;
   }
-  .container .gridTop .frmSub {
+  .container-fluid .container .gridTop .frmSub {
     width: 90%;
   }
-  .container .gridTop .frmSub .inputTxt {
+  .container-fluid .container .gridTop .frmSub .inputTxt {
     margin-right: 0.4rem;
   }
-  .container .gridTop .flex-column {
+  .container-fluid .container .gridTop .flex-column {
     width: 6rem;
     line-height: 2;
   }
-  .container .footerBot {
+  .container-fluid .container .footerBot {
     text-align: center;
     margin: 0 auto;
     background-color: #c8c6c6;
   }
-  .container .footerBot .d-flex {
+  .container-fluid .container .footerBot .d-flex {
     justify-content: center;
+  }
+  .container-fluid .container .footerBot .d-flex i {
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .container-fluid .container .footerBot .d-flex i:hover {
+    opacity: 0.6;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   body {
     font-size: 16px;
   }
-  .container {
-    margin: 0 auto;
+  .container-fluid {
     background-color: #ccc;
   }
-  .container .nav {
+  .container-fluid .container {
+    margin: 0 auto;
+  }
+  .container-fluid .container .nav {
     margin-left: 0.8rem;
     font-size: smaller;
   }
-  .container .gridTop {
+  .container-fluid .container .gridTop {
     display: grid;
     grid-template-columns: 40% auto;
     grid-template-rows: 2;
@@ -93,27 +118,35 @@
     margin-bottom: 0.8rem;
     padding-top: 0.8rem;
   }
-  .container .gridTop h5,
-  .container .gridTop p {
+  .container-fluid .container .gridTop h5,
+  .container-fluid .container .gridTop p {
     font-size: 0.8rem;
   }
-  .container .gridTop .frmSub {
+  .container-fluid .container .gridTop .frmSub {
     width: 90%;
     font-size: smaller;
   }
-  .container .gridTop .frmSub .inputTxt {
+  .container-fluid .container .gridTop .frmSub .inputTxt {
     margin-bottom: 0.4rem;
   }
-  .container .gridTop .mapouter {
+  .container-fluid .container .gridTop .mapouter {
     width: 10rem;
     height: 10rem;
   }
-  .container .footerBot {
+  .container-fluid .container .footerBot {
     text-align: center;
     margin: 0 auto;
     background-color: #c8c6c6;
   }
-  .container .footerBot .d-flex {
+  .container-fluid .container .footerBot .d-flex {
     justify-content: center;
+  }
+  .container-fluid .container .footerBot .d-flex i {
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .container-fluid .container .footerBot .d-flex i:hover {
+    opacity: 0.6;
   }
 }/*# sourceMappingURL=footer.component.css.map */
