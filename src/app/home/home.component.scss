@@ -22,9 +22,29 @@
     min-height: 500px;
 }
 
-// sample section
+// portfolio section
+.description {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    h5 {
+        color: white;
+    }
+}
+
+.card {
+    img{
+        // aspect-ratio: 16/25;
+        // width: 100%;
+        background-size: auto, auto;
+    }
+}
 
 // contact me section
 #contact-section {
     min-height: 500px;
 }
+
