@@ -18,14 +18,26 @@
 </div>
 
 <!-- portfolio section -->
-<div class="portfolio-section">
-    <div *ngFor="let val of portfolio">
-        <h3>{{val.name}}</h3>
-        <img src="{{val.image}}" alt="">
-    </div>
+<div id="portfolio-section">
+    <div class="row">
 
+        <div class="col d-flex justify-content-around my-3" *ngFor="let val of portfolio">
+            <div class="card" style="width: 22rem;">
+                <img src="{{val.image}}" class="card-img-top" alt="{{val.name}}">
+                <div class="description">
+                    <h5>{{val.name}}</h5>
+                </div>
+            </div>
+        </div>
+            
+    </div>
 </div>
-<button class="btn btn-outline-dark">Show more</button>
+<div class="text-center">
+    <button class="btn btn-outline-dark">Show more</button>
+</div>
+
+
+
 <!-- sample section -->
 <div id="sample-section" class="carousel slide bg-dark" data-bs-touch="false">
     <div class="carousel-inner">
