@@ -1,1 +1,10 @@
-<p>gallery works!</p>
+<div *ngFor="let gallery of galleries">
+  <h1>{{ gallery.name }}</h1>
+  <div class="row">
+    <img
+      *ngFor="let image of gallery.images"
+      src="{{ image }}"
+      class="col-4 gallery-image"
+    />
+  </div>
+</div>
