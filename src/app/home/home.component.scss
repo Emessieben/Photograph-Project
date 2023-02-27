@@ -43,6 +43,28 @@
     }
 }
 
+// features section
+#features-section {
+    position: relative; 
+    padding: 7% 15%;
+    background-color: white;
+}
+
+.feature-box {
+    padding: 5%;
+    text-align: center;
+}
+
+.feature-icon {
+    color: black;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.feature-icon:hover {
+    color: red;
+}
+
 // contact me section
 #contact-section {
     min-height: 500px;
