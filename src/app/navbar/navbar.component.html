@@ -3,7 +3,12 @@
       
         <a class="navbar-brand" routerLink=""><img src="https://img.icons8.com/carbon-copy/512/compact-camera.png" height="50px">Amazing Photos</a>
      
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
@@ -35,10 +40,40 @@
     </div>
   </nav> -->
 
- <nav class="navbar navbar-expand-lg navbar-light " id="mainNav">
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
 
         <a class="navbar-brand mt-2 mt-lg-0" routerLink="" id="navBrand"><img src="https://img.icons8.com/carbon-copy/512/compact-camera.png" height="50px" loading="lazy">Lorena.photo</a>
+
+        <div class="collapse" id="navbarSupportedContent">
+            <div class="bg-dark p-4">
+                <ul>
+                    <li>
+                        <a class="text-white" routerLink="about" style="text-decoration:none;">All about me</a>
+                    </li>
+                    <li>
+                        <a class="text-white" routerLink="awards"style="text-decoration:none">Awards</a>
+                    </li>
+                    <li>
+                        <a class="text-white" routerLink="gallery"style="text-decoration:none">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="text-white" routerLink="testimonials"style="text-decoration:none">Testimonials</a>
+                    </li>
+                    <li>
+                        <a class="text-white" routerLink="contact"style="text-decoration:none">Contact</a>
+                    </li>
+                    <!-- <li>
+                        <a class="text-white" routerLink="awards">Awards</a>
+                    </li> -->
+
+                </ul>
+             
+
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+          </div>
+
 
         <button
         class="navbar-toggler"
@@ -71,9 +106,10 @@
               >
                 Explore Me
               </a>
+              
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" id="navbarSupportedContent" routerLink="">Home</a>
+                  <a class="dropdown-item"  routerLink="">Home</a>
                 </li>
                 <li>
                   <a class="dropdown-item" routerLink="about">All about me</a>
@@ -92,6 +128,7 @@
                 </li>
                
               </ul>
+            
             </li>
           </ul>
        
