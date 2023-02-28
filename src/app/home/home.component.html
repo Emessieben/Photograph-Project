@@ -11,7 +11,9 @@
 <div id="introduction-section" class="text-center">
     <h1>i'm Lorena.</h1>
     <h3>a photographer.</h3>
-    <img class="my-5" src="https://cdn.pixabay.com/photo/2018/03/01/14/57/portrait-3190849_1280.jpg" alt="picture of me">
+        <div class="intro-img">
+            <img class="my-5" src="https://cdn.pixabay.com/photo/2018/03/01/14/57/portrait-3190849_1280.jpg" alt="picture of me">
+        </div>
     <p>I am addicted to Photography and want to show you some of my work. Want to know more about me?</p>
     <button class="btn btn-outline-dark btn-lg my-3" routerLink="about">ABOUT ME</button>
 </div>
@@ -22,7 +24,7 @@
     <div class="row py-5">
 
         <div class="col d-flex justify-content-around my-3" *ngFor="let val of portfolio">
-            <div class="card border-dark m-5" style="width: 20rem;">
+            <div class="card m-5" style="width: 20rem;">
                 <img src="{{val.image}}" class="card-img-top" alt="{{val.name}}">
                 <div class="description">
                     <h5>{{val.name}}</h5>

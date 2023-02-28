@@ -43,10 +43,13 @@ h2 {
 #introduction-section {
     padding: $section-padding;
     background-color: $main-color;
-    color: black;
     img {
         width: 40%;
         clip-path: circle();
+        &:hover {
+            transform: rotate(36000deg);
+            transition: .5s,600s linear transform;
+        }
     }
 }
 
@@ -58,12 +61,17 @@ h2 {
         height: 100%;
         filter: grayscale(0.7) brightness(80%);
         transition: 0.3s ease-in-out;
+        border-radius: inherit;
+        &:hover{
+            filter: grayscale(0) brightness(100%);
+        }
     }
-    img:hover{
-        filter: grayscale(0) brightness(100%);
-    }
-
 }
+
+.card {
+    border: 2px;
+}
+
 // portfolio image description
 .description {
     // background: rgba(0, 0, 0, 0.5);
