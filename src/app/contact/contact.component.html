@@ -1,1 +1,63 @@
-<p>contact works!</p>
+<div class="container-fluid">
+    <div *ngFor="let info of myInfo; index as id">
+        <div class="media">
+            <!-- <img class="mr-3" src="https://images.pexels.com/photos/3866555/pexels-photo-3866555.png?auto=compress&cs=tinysrgb&w=1600" alt="Generic placeholder image"> -->
+            <img class="mr-3" src="https://cdn.pixabay.com/photo/2018/03/01/14/57/portrait-3190849_1280.jpg" alt="Generic placeholder image">
+
+            <div class="media-body">
+                <h5>{{ info.fName }} {{ info.lName}}</h5>
+                Please send me your request using the form below. I'll get back to you within 48 hours via email or phone. Please check the spam folder if you don't find a message from me. I look forward to meeting you soon!
+            </div>
+        </div>
+
+        <!-- Registration-Form -->
+        <form [formGroup]="myFormG" class="form-control myForm" (ngSubmit)="onSubmit()">
+            <div class="card">
+                <div class="pLogo">
+                    <!-- <img src="../../assets/images/logoSample.png" class="imgC" alt="Contact Logo"> -->
+                    <!-- <p>{{ info.fName }} <br> PHOTOGRAPHY</p> -->
+                    <!-- <p>PHOTOGRAPHY</p> -->
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Event Photography Contract</h5>
+                    <div class="card-text">
+                        <input class="form-control form-control-sm" id="fName" type="text" placeholder="First Name*" name="fName" aria-label=".form-control-sm example" formControlName="fName">
+                        <input class="form-control form-control-sm" type="text" placeholder="Last Name*" name="lName" aria-label=".form-control-sm example" formControlName="lName">
+                        <input class="form-control form-control-sm" type="email" placeholder="Email Address*" name="email" aria-label=".form-control-sm example" formControlName="email" ngModel email="true">
+                        <input class="form-control form-control-sm" type="text" placeholder="+436601234569*" name="phone" aria-label=".form-control-sm example" formControlName="phone">
+                        <button type="submit" [disabled]="!myFormG.valid" class="btn btn-outline-warning form-control form-control-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">{{ info.fName }} {{ info.lName}} Photography</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal End-->
+                    </div>
+                    <hr>
+                    <div class="card-text">
+                        <p>{{ info.fName }} {{ info.lName}}</p>
+                        <p>{{ info.phone }}</p>
+                        <p>{{ info.email }}</p>
+                        <p>{{ info.city }}</p>
+
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

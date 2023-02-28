@@ -1,10 +1,28 @@
-  img{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
+
+$main-color: #FDEEDC; // cream-white
+$second-color: #FFD8A9; // ligth-orange
+$third-color: #F1A661; // middle-orange
+$fourth-color: #E38B29; // dark-orange
+
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Staatliches', cursive;
+}
+  
+  
+  
+img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 body{
-    background-color: #e7dfcf;
+    background-color: #FDEEDC; 
     position: relative;
     margin:20px 30px ;
 }
@@ -12,15 +30,18 @@ body{
     max-width: 800px;
     background-color: white;
     padding: 0;
+    height: 600px;
+    
 }
 .review{
     font-size: 30px;
     font-weight: 600;
-    padding: 30px 0 ;
+    
+    
 }
 .name{
     font-size: 18px;
-    color: #c1e718;
+    color: $third-color;
     margin: 0;
 }
 .job{
@@ -34,9 +55,12 @@ body{
     font-size: 14px;
 }
 .carousel-indicators {
-    bottom: -20px;
-    right: 0;
-    margin: 0;
+    
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-100%);
+    z-index: 1;
 }
 
 .carousel-indicators [data-bs-target ] {
@@ -45,10 +69,11 @@ body{
     width: 10px;
     background-color: inherit;
     border-radius: 50%;
+    
 }
 .carousel-indicators .active{
     border: 2px solid transparent;
-    background-color:#c1e718;
+    background-color: $third-color;
 }
 .left{
     color: rgb(20, 20, 20);
@@ -88,6 +113,9 @@ body{
     }
     .carousel-indicators .active{
         border: 1px solid transparent;
-        background-color:#c1e718;
+        background-color:#E38B29;
     }
 }
+
+
+

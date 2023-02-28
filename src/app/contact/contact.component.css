@@ -1,1 +1,121 @@
-/*# sourceMappingURL=contact.component.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@media screen and (min-width: 768px) and (max-width: 2560px) {
+  body {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+  }
+  .container-fluid .media {
+    background-color: #FDEEDC;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.8rem 0 1rem 0;
+  }
+  .container-fluid .media img {
+    width: 20vw;
+    margin: 0 1rem 0 0;
+  }
+  .container-fluid .media .media-body {
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+  }
+  .container-fluid .form-control {
+    margin: 0.8rem auto;
+    width: 68%;
+  }
+  .container-fluid .form-control .card .pLogo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .container-fluid .form-control .card .pLogo .imgC {
+    width: 10vw;
+    height: auto;
+    padding: 1rem;
+  }
+  .container-fluid .form-control .card .pLogo p {
+    margin-top: 3rem;
+  }
+  .container-fluid .form-control .card .card-body .card-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0.5rem;
+    width: 50vw;
+    margin: 0.5rem auto;
+    font-family: "Roboto", sans-serif;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  .container-fluid .media {
+    background-color: #FDEEDC;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.8rem 0 1rem 0;
+  }
+  .container-fluid .media img {
+    width: 20vw;
+    margin: 0 1rem 0 0;
+  }
+  .container-fluid .media .media-body {
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+  }
+  .container-fluid .media .form-control {
+    margin: 0.8rem auto;
+    width: 68%;
+  }
+  .container-fluid .media .form-control .card .pLogo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .container-fluid .media .form-control .card .pLogo .imgC {
+    width: 20px;
+    height: auto;
+    padding: 1rem;
+  }
+  .container-fluid .media .form-control .card .pLogo p {
+    margin-top: 3rem;
+  }
+  .container-fluid .media .form-control .card .pLogo .card-body .card-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0.5rem;
+    width: 35vw;
+    margin: 0.5rem auto;
+    font-family: "Roboto", sans-serif;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 481px) {
+  body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  .container-fluid .media {
+    background-color: #FDEEDC;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.8rem 0 1rem 0;
+  }
+  .container-fluid .media img {
+    width: 25vw;
+    margin: 0 1rem 0 0;
+  }
+  .container-fluid .media .media-body {
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+  }
+  .container-fluid .card .card-body .card-text {
+    font-family: "Roboto", sans-serif;
+  }
+}/*# sourceMappingURL=contact.component.css.map */
