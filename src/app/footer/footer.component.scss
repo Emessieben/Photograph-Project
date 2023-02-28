@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
+$main-color: #FDEEDC; // cream-white
+$second-color: #FFD8A9; // ligth-orange
+$third-color: #F1A661; // middle-orange
+$fourth-color: #E38B29; // dark-orange
+$section-padding: 7% 15%;
 @media screen and (min-width: 769px) and (max-width: 2560px) {
     body {
         font-size: 25px;
@@ -6,7 +12,7 @@
         width: 100vw;
         margin: 0;
         padding: 0;
-        background-color: #ccc;
+        background-color: $main-color;
         .container {
             margin: 0 auto;
             .nav {
@@ -34,7 +40,7 @@
             .footerBot {
                 text-align: center;
                 margin: 0 auto;
-                background-color: #c8c6c6;
+                background-color: $third-color;
                 .d-flex {
                     justify-content: center;
                     i {
@@ -57,7 +63,7 @@
         font-size: 16px;
     }
     .container-fluid {
-        background-color: #ccc;
+        background-color: $main-color;
         .container {
             margin: 0 auto;
             .nav {
@@ -82,7 +88,7 @@
             .footerBot {
                 text-align: center;
                 margin: 0 auto;
-                background-color: #c8c6c6;
+                background-color: $third-color;
                 .d-flex {
                     justify-content: center;
                     i {
@@ -105,7 +111,7 @@
         font-size: 16px;
     }
     .container-fluid {
-        background-color: #ccc;
+        background-color: $main-color;
         .container {
             margin: 0 auto;
             .nav {
@@ -139,7 +145,7 @@
             .footerBot {
                 text-align: center;
                 margin: 0 auto;
-                background-color: #c8c6c6;
+                background-color: $third-color;
                 .d-flex {
                     justify-content: center;
                     i {
