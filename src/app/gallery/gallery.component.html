@@ -1,10 +1,10 @@
-<div *ngFor="let gallery of galleries">
+<div *ngFor="let gallery of galleries" class="p-4">
   <h1>{{ gallery.name }}</h1>
   <div class="row">
     <img
       *ngFor="let image of gallery.images"
       src="{{ image }}"
-      class="col-4 gallery-image"
+      class="col-4 gallery-image p-2 shadow"
     />
   </div>
 </div>
