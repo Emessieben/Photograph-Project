@@ -13,13 +13,16 @@ $section-padding: 7% 15%;
     }
     .container-fluid {
         // background-color: rgb(167, 162, 137);
+        sup {
+            color: red;
+        }
         .media {
             // background-color: rgb(184, 179, 159);
             background-color: $main-color;
             display: flex;
             align-items: center;
             padding: 1rem;
-            margin: .8rem 0 1rem 0;
+            margin: 7rem 0 1rem 0;
             img {
                 width: 20vw;
                 margin: 0 1rem 0 0;
@@ -31,7 +34,7 @@ $section-padding: 7% 15%;
         }
         .form-control {
             margin: .8rem auto;
-            width: 68%;
+            width: 80%;
             .card {
                 .pLogo {
                     display: flex;
@@ -49,11 +52,24 @@ $section-padding: 7% 15%;
                     .card-text {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
-                        grid-template-rows: repeat(2, 1fr);
+                        grid-template-rows: repeat(5, 1fr);
                         padding: .5rem;
                         width: 50vw;
                         margin: .5rem auto;
                         font-family: 'Roboto', sans-serif;
+                        .allLable {
+                            text-align: center;
+                            font-size: .97rem;
+                            line-height: 4;
+                        }
+                        .form-control-sm {
+                            text-align: start;
+                        }
+                        #btn {
+                            text-align: center;
+                            background-color: $fourth-color;
+                            color: white;
+                        }
                     }
                 }
             }
@@ -76,7 +92,7 @@ $section-padding: 7% 15%;
             display: flex;
             align-items: center;
             padding: 1rem;
-            margin: .8rem 0 1rem 0;
+            margin: 7rem 0 1rem 0;
             img {
                 width: 20vw;
                 margin: 0 1rem 0 0;
@@ -110,6 +126,19 @@ $section-padding: 7% 15%;
                                 margin: .5rem auto;
                                 font-family: 'Roboto', sans-serif;
                             }
+                            .allLable {
+                                text-align: center;
+                                font-size: .8rem;
+                                line-height: 4;
+                            }
+                            .form-control-sm {
+                                text-align: start;
+                            }
+                            #btn {
+                                text-align: center;
+                                background-color: $fourth-color;
+                                color: white;
+                            }
                         }
                     }
                 }
@@ -132,7 +161,7 @@ $section-padding: 7% 15%;
             display: flex;
             align-items: center;
             padding: 1rem;
-            margin: .8rem 0 1rem 0;
+            margin: 7rem 0 1rem 0;
             img {
                 width: 25vw;
                 margin: 0 1rem 0 0;
@@ -146,6 +175,19 @@ $section-padding: 7% 15%;
             .card-body {
                 .card-text {
                     font-family: 'Roboto', sans-serif;
+                    .allLable {
+                        text-align: end;
+                        font-size: .8rem;
+                        line-height: 4;
+                    }
+                    .form-control-sm {
+                        text-align: start;
+                    }
+                    #btn {
+                        text-align: center;
+                        background-color: $fourth-color;
+                        color: white;
+                    }
                 }
             }
         }
