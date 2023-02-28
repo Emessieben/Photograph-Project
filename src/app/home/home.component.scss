@@ -46,10 +46,6 @@ h2 {
     img {
         width: 40%;
         clip-path: circle();
-        &:hover {
-            transform: rotate(36000deg);
-            transition: .5s,600s linear transform;
-        }
     }
 }
 
