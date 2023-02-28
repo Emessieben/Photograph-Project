@@ -1,0 +1,35 @@
+$main-color: #FDEEDC; // cream-white
+$second-color: #FFD8A9; // ligth-orange
+$third-color: #F1A661; // middle-orange
+$fourth-color: #E38B29; // dark-orange
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+#mainNav{
+    background-color: $second-color;
+    font-family:  'Roboto', sans-serif;
+    font-weight: bold;
+    // font-size: 25px;
+}
+
+#bookMe{
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Tilt Prism', cursive;
+
+
+}
+
+#bookmeDiv{
+    background-color: $fourth-color;
+    border: 3px solid black;
+}
+#arrow{
+    height: 15px;
+    width: 15px;
+    align-items:center;
+}
+#navbarDropdownMenuLink{
+    font-size:20px;
+}
