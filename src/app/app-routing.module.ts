@@ -10,30 +10,37 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 const routes: Routes = [
   {
-    path:"", component:HomeComponent
+    path: '',
+    component: HomeComponent,
   },
   {
-    path:"about", component:AboutComponent
+    path: 'about',
+    component: AboutComponent,
   },
   {
-    path: "awards", component:AwardsComponent
+    path: 'awards',
+    component: AwardsComponent,
   },
   {
-    path:"contact", component:ContactComponent    
+    path: 'contact',
+    component: ContactComponent,
   },
   {
-    path:"customers", component:CustomersComponent
+    path: 'customers',
+    component: CustomersComponent,
   },
   {
-    path:"gallery", component:GalleryComponent
+    path: 'gallery',
+    component: GalleryComponent,
   },
   {
-    path:"testimonials", component:TestimonialsComponent
-  }
+    path: 'testimonials',
+    component: TestimonialsComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
