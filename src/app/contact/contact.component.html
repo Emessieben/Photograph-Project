@@ -1,7 +1,6 @@
 <div class="container-fluid">
     <div *ngFor="let info of myInfo">
         <div class="media">
-            <!-- <img class="mr-3" src="https://images.pexels.com/photos/3866555/pexels-photo-3866555.png?auto=compress&cs=tinysrgb&w=1600" alt="Generic placeholder image"> -->
             <img class="mr-3" src="https://cdn.pixabay.com/photo/2018/03/01/14/57/woman-3190852_960_720.jpg" alt="Generic placeholder image">
 
             <div class="media-body">
@@ -57,7 +56,7 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body" *ngFor="let value of newCustomer">
-                                        <p>Dear {{ value.fName }} </p>
+                                        <p>Dear {{ value.fName }}, </p>
                                         <p>Thank you for your registration.</p>
                                         <p>I'll get back to you within 48 hours via Your Email {{ value.email }} or your Phone Number {{ value.phone }}. </p>
                                         <p>Your {{ info.fName }} </p>
