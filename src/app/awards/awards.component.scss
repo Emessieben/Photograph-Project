@@ -20,7 +20,7 @@ h2 {
     font-size: 4rem;
 }
 
-// intro awards and pricing
+// intro awards 
 .parallax-awards {
     background-image: url("https://cdn.pixabay.com/photo/2018/01/05/22/48/couple-3064048_960_720.jpg");
     min-height: 700px; 
@@ -39,14 +39,6 @@ h2 {
         position: absolute;
         right: 10px;
         top: 300px;
-    }
-}
-// pricing
-#pricing-section {
-    background-color: $second-color;
-    padding: 7% 3%;
-    .card-header {
-        background-color: $main-color;
     }
 }
 
