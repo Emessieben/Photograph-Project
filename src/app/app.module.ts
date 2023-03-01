@@ -8,7 +8,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
-import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CustomersComponent } from './customers/customers.component';
@@ -23,7 +22,6 @@ import { PricingComponent } from './pricing/pricing.component';
     HomeComponent,
     FooterComponent,
     ContactComponent,
-    RegisterComponent,
     AboutComponent,
     TestimonialsComponent,
     CustomersComponent,
