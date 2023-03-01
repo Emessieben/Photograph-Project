@@ -6,6 +6,37 @@
     margin: 0;
     padding: 0;
   }
+  .container-fluid {
+    font-family: "Staatliches", cursive;
+  }
+  .container-fluid h1,
+  .container-fluid h2,
+  .container-fluid h3,
+  .container-fluid h4,
+  .container-fluid h5,
+  .container-fluid h6 {
+    font-family: "Staatliches", cursive;
+  }
+  .container-fluid hr.style-seven {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+  }
+  .container-fluid hr.style-seven:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
   .container-fluid sup {
     color: red;
   }
@@ -26,7 +57,9 @@
   }
   .container-fluid .form-control {
     margin: 0.8rem auto;
-    width: 80%;
+  }
+  .container-fluid .form-control .card {
+    border: none;
   }
   .container-fluid .form-control .card .pLogo {
     display: flex;
@@ -45,7 +78,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     padding: 0.5rem;
-    width: 50vw;
     margin: 0.5rem auto;
     font-family: "Roboto", sans-serif;
   }
@@ -69,6 +101,40 @@
     margin: 0;
     padding: 0;
   }
+  .container-fluid {
+    font-family: "Staatliches", cursive;
+  }
+  .container-fluid h1,
+  .container-fluid h2,
+  .container-fluid h3,
+  .container-fluid h4,
+  .container-fluid h5,
+  .container-fluid h6 {
+    font-family: "Staatliches", cursive;
+  }
+  .container-fluid hr.style-seven {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+  }
+  .container-fluid hr.style-seven:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
+  .container-fluid sup {
+    color: red;
+  }
   .container-fluid .media {
     background-color: #FDEEDC;
     display: flex;
@@ -86,7 +152,7 @@
   }
   .container-fluid .media .form-control {
     margin: 0.8rem auto;
-    width: 68%;
+    height: 1rem;
   }
   .container-fluid .media .form-control .card .pLogo {
     display: flex;
@@ -123,11 +189,44 @@
     color: white;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 481px) {
+@media screen and (min-width: 482px) and (max-width: 767px) {
   body {
-    font-size: 16px;
     margin: 0;
     padding: 0;
+  }
+  .container-fluid {
+    font-family: "Staatliches", cursive;
+  }
+  .container-fluid h1,
+  .container-fluid h2,
+  .container-fluid h3,
+  .container-fluid h4,
+  .container-fluid h5,
+  .container-fluid h6 {
+    font-family: "Staatliches", cursive;
+  }
+  .container-fluid hr.style-seven {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+  }
+  .container-fluid hr.style-seven:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
+  .container-fluid sup {
+    color: red;
   }
   .container-fluid .media {
     background-color: #FDEEDC;
@@ -137,12 +236,107 @@
     margin: 7rem 0 1rem 0;
   }
   .container-fluid .media img {
-    width: 25vw;
+    width: 20vw;
     margin: 0 1rem 0 0;
   }
   .container-fluid .media .media-body {
     flex: 1;
     font-family: "Roboto", sans-serif;
+  }
+  .container-fluid .media .form-control {
+    margin: 0.8rem auto;
+    height: 1.8rem;
+  }
+  .container-fluid .media .form-control .card .pLogo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .container-fluid .media .form-control .card .pLogo .imgC {
+    width: 20px;
+    height: auto;
+    padding: 1rem;
+  }
+  .container-fluid .media .form-control .card .pLogo p {
+    margin-top: 3rem;
+  }
+  .container-fluid .media .form-control .card .pLogo .card-body .card-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    font-family: "Roboto", sans-serif;
+  }
+  .container-fluid .media .form-control .card .pLogo .card-body .allLable {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .container-fluid .media .form-control .card .pLogo .card-body .form-control-sm {
+    text-align: start;
+  }
+  .container-fluid .media .form-control .card .pLogo .card-body #btn {
+    text-align: center;
+    background-color: #E38B29;
+    color: white;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 481px) {
+  body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  .container-fluid {
+    font-family: "Staatliches", cursive;
+  }
+  .container-fluid h1,
+  .container-fluid h2,
+  .container-fluid h3,
+  .container-fluid h4,
+  .container-fluid h5,
+  .container-fluid h6 {
+    font-family: "Staatliches", cursive;
+  }
+  .container-fluid hr.style-seven {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+  }
+  .container-fluid hr.style-seven:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
+  .container-fluid sup {
+    color: red;
+  }
+  .container-fluid .media {
+    background-color: #FDEEDC;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 7rem 0 1rem 0;
+  }
+  .container-fluid .media img {
+    width: 40%;
+    margin: 0 1rem 0 0;
+  }
+  .container-fluid .media .media-body {
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+  }
+  .container-fluid .card {
+    border: none;
   }
   .container-fluid .card .card-body .card-text {
     font-family: "Roboto", sans-serif;
@@ -159,5 +353,6 @@
     text-align: center;
     background-color: #E38B29;
     color: white;
+    margin-top: 0.5rem;
   }
 }/*# sourceMappingURL=contact.component.css.map */

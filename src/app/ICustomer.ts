@@ -3,4 +3,5 @@ export interface ICustomer {
     lName: string,    
     email: string,
     phone: string,    
+    message: string,    
 }

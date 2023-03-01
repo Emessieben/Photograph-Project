@@ -6,7 +6,8 @@
 
             <div class="media-body">
                 <h5>{{ info.fName }} {{ info.lName}}</h5>
-                Please send me your request using the form below. I'll get back to you within 48 hours via email or phone. Please check the spam folder if you don't find a message from me. I look forward to meeting you soon!
+                <p>Please send me your request using the form below.</p>
+                <p>I'll get back to you within 48 hours via email or phone. Please check the spam folder if you don't find a message from me. I look forward to meeting you soon!</p>
             </div>
         </div>
 
@@ -19,7 +20,13 @@
                     <!-- <p>PHOTOGRAPHY</p> -->
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Event Photography Contract</h5>
+                    <h5 class="card-title text-center">GET IN TOUCH</h5>
+
+                    <p class="text-center"><i class="bi bi-telephone-fill"></i>Phone:{{ info.phone }}</p>
+                    <p class="text-center"><i class="bi bi-envelope-fill"></i>Email:{{ info.email }}</p>
+                    <p class="text-center"><i class="bi bi-geo-alt-fill"></i>Address:{{ info.city }}</p>
+                    <hr class="style-seven">
+
                     <div class="card-text">
 
                         <label class="allLable" for="fName">First Name:<sup>*</sup></label>
@@ -33,6 +40,9 @@
 
                         <label class="allLable" for="phone">Phone No.:<sup>*</sup></label>
                         <input class="form-control form-control-sm" type="text" placeholder="+43-6601234567" name="phone" aria-label=".form-control-sm example" formControlName="phone">
+
+                        <label class="allLable" for="phone">your Message:<sup>*</sup></label>
+                        <textarea class="form-control" aria-label="With textarea" name="message" formControlName="message"></textarea>
 
                         <label class="allLable" for=""></label>
                         <button type="submit" id="btn" class="btn btn-outline-warning form-control form-control-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" [disabled]="!myFormG.valid">Register</button>
@@ -62,11 +72,11 @@
 
                         <div *ngIf="myFormG.controls['fName'].invalid && (myFormG.controls['fName'].dirty || myFormG.controls['fName'].touched)" class="alert">
                             <div class="text-danger" style="font-size: .7rem;" *ngIf="myFormG.controls['fName'].errors?.['required']">
-                                Please enter your Name! Your name must be min:2 and max:50 character ...</div>
+                                Please enter your Name!</div>
                         </div>
                         <div *ngIf="myFormG.controls['lName'].invalid && (myFormG.controls['lName'].dirty || myFormG.controls['lName'].touched)" class="alert">
                             <div class="text-danger" style="font-size: .7rem;" *ngIf="myFormG.controls['lName'].errors?.['required']">
-                                Please enter your Last Name! Your name must be min:2 and max:50 character ...</div>
+                                Please enter your Last Name!</div>
                         </div>
                         <div *ngIf="myFormG.controls['email'].invalid && (myFormG.controls['email'].dirty || myFormG.controls['email'].touched)" class="alert">
                             <div class="text-danger" style="font-size: .7rem;" *ngIf="myFormG.controls['email'].errors?.['required']">
@@ -77,16 +87,17 @@
                                 Enter your Phone Number!</div>
                         </div>
 
-                    </div>
-                    <hr>
 
-                    <div class="card-text">
+                    </div>
+
+
+                    <!--   <div class="card-text">
                         <p>{{ info.fName }} {{ info.lName}}</p>
                         <p>{{ info.phone }}</p>
                         <p>{{ info.email }}</p>
                         <p>{{ info.city }}</p>
 
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </form>
