@@ -1,8 +1,8 @@
 <div class="container-fluid">
-    <div *ngFor="let info of myInfo; index as id">
+    <div *ngFor="let info of myInfo">
         <div class="media">
             <!-- <img class="mr-3" src="https://images.pexels.com/photos/3866555/pexels-photo-3866555.png?auto=compress&cs=tinysrgb&w=1600" alt="Generic placeholder image"> -->
-            <img class="mr-3" src="https://cdn.pixabay.com/photo/2018/03/01/14/57/portrait-3190849_1280.jpg" alt="Generic placeholder image">
+            <img class="mr-3" src="https://cdn.pixabay.com/photo/2018/03/01/14/57/woman-3190852_960_720.jpg" alt="Generic placeholder image">
 
             <div class="media-body">
                 <h5>{{ info.fName }} {{ info.lName}}</h5>
@@ -11,7 +11,7 @@
         </div>
 
         <!-- Registration-Form -->
-        <form [formGroup]="myFormG" class="form-control myForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="myFormG" class="form-control form-floating myForm " (ngSubmit)="onSubmit()">
             <div class="card">
                 <div class="pLogo">
                     <!-- <img src="../../assets/images/logoSample.png" class="imgC" alt="Contact Logo"> -->
@@ -21,33 +21,65 @@
                 <div class="card-body">
                     <h5 class="card-title">Event Photography Contract</h5>
                     <div class="card-text">
-                        <input class="form-control form-control-sm" id="fName" type="text" placeholder="First Name*" name="fName" aria-label=".form-control-sm example" formControlName="fName">
-                        <input class="form-control form-control-sm" type="text" placeholder="Last Name*" name="lName" aria-label=".form-control-sm example" formControlName="lName">
-                        <input class="form-control form-control-sm" type="email" placeholder="Email Address*" name="email" aria-label=".form-control-sm example" formControlName="email" ngModel email="true">
-                        <input class="form-control form-control-sm" type="text" placeholder="+436601234569*" name="phone" aria-label=".form-control-sm example" formControlName="phone">
-                        <button type="submit" [disabled]="!myFormG.valid" class="btn btn-outline-warning form-control form-control-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</button>
+
+                        <label class="allLable" for="fName">First Name:<sup>*</sup></label>
+                        <input class="form-control form-control-sm" id="fName" type="text" placeholder="min:2 and max:50!" value="First Name*" name="fName" aria-label=".form-control-sm example" formControlName="fName" required>
+
+                        <label class="allLable" for="lName">Last Name:<sup>*</sup></label>
+                        <input class="form-control form-control-sm" type="text" placeholder="min:2 and max:50!" name="lName" aria-label=".form-control-sm example" formControlName="lName" required>
+
+                        <label class="allLable" for="email">Email:<sup>*</sup></label>
+                        <input class="form-control form-control-sm" type="email" placeholder="valid Email(test@test.com!)" name="email" aria-label=".form-control-sm example" formControlName="email" ngModel email="true" required>
+
+                        <label class="allLable" for="phone">Phone No.:<sup>*</sup></label>
+                        <input class="form-control form-control-sm" type="text" placeholder="+43-6601234567" name="phone" aria-label=".form-control-sm example" formControlName="phone">
+
+                        <label class="allLable" for=""></label>
+                        <button type="submit" id="btn" class="btn btn-outline-warning form-control form-control-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" [disabled]="!myFormG.valid">Register</button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">{{ info.fName }} {{ info.lName}} Photography</h1>
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">{{ info.fName }} {{ info.lName}} Photography
+                                        </h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
-                                        ...
+                                    <div class="modal-body" *ngFor="let value of newCustomer">
+                                        <p>Dear {{ value.fName }} </p>
+                                        <p>Thank you for your registration.</p>
+                                        <p>I'll get back to you within 48 hours via Your Email {{ value.email }} or your Phone Number {{ value.phone }}. </p>
+                                        <p>Your {{ info.fName }} </p>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Modal End-->
+
+                        <div *ngIf="myFormG.controls['fName'].invalid && (myFormG.controls['fName'].dirty || myFormG.controls['fName'].touched)" class="alert">
+                            <div class="text-danger" style="font-size: .7rem;" *ngIf="myFormG.controls['fName'].errors?.['required']">
+                                Please enter your Name! Your name must be min:2 and max:50 character ...</div>
+                        </div>
+                        <div *ngIf="myFormG.controls['lName'].invalid && (myFormG.controls['lName'].dirty || myFormG.controls['lName'].touched)" class="alert">
+                            <div class="text-danger" style="font-size: .7rem;" *ngIf="myFormG.controls['lName'].errors?.['required']">
+                                Please enter your Last Name! Your name must be min:2 and max:50 character ...</div>
+                        </div>
+                        <div *ngIf="myFormG.controls['email'].invalid && (myFormG.controls['email'].dirty || myFormG.controls['email'].touched)" class="alert">
+                            <div class="text-danger" style="font-size: .7rem;" *ngIf="myFormG.controls['email'].errors?.['required']">
+                                Enter Valid Email Address!</div>
+                        </div>
+                        <div *ngIf="myFormG.controls['phone'].invalid && (myFormG.controls['phone'].dirty || myFormG.controls['phone'].touched)" class="alert">
+                            <div class="text-danger" style="font-size: .7rem;" *ngIf="myFormG.controls['phone'].errors?.['required']">
+                                Enter your Phone Number!</div>
+                        </div>
+
                     </div>
                     <hr>
+
                     <div class="card-text">
                         <p>{{ info.fName }} {{ info.lName}}</p>
                         <p>{{ info.phone }}</p>
@@ -55,7 +87,6 @@
                         <p>{{ info.city }}</p>
 
                     </div>
-                    <!--  -->
                 </div>
             </div>
         </form>

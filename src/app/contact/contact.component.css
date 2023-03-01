@@ -6,12 +6,15 @@
     margin: 0;
     padding: 0;
   }
+  .container-fluid sup {
+    color: red;
+  }
   .container-fluid .media {
     background-color: #FDEEDC;
     display: flex;
     align-items: center;
     padding: 1rem;
-    margin: 0.8rem 0 1rem 0;
+    margin: 7rem 0 1rem 0;
   }
   .container-fluid .media img {
     width: 20vw;
@@ -23,7 +26,7 @@
   }
   .container-fluid .form-control {
     margin: 0.8rem auto;
-    width: 68%;
+    width: 80%;
   }
   .container-fluid .form-control .card .pLogo {
     display: flex;
@@ -40,11 +43,24 @@
   .container-fluid .form-control .card .card-body .card-text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     padding: 0.5rem;
     width: 50vw;
     margin: 0.5rem auto;
     font-family: "Roboto", sans-serif;
+  }
+  .container-fluid .form-control .card .card-body .card-text .allLable {
+    text-align: center;
+    font-size: 0.97rem;
+    line-height: 4;
+  }
+  .container-fluid .form-control .card .card-body .card-text .form-control-sm {
+    text-align: start;
+  }
+  .container-fluid .form-control .card .card-body .card-text #btn {
+    text-align: center;
+    background-color: #E38B29;
+    color: white;
   }
 }
 @media screen and (min-width: 768px) {
@@ -58,7 +74,7 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    margin: 0.8rem 0 1rem 0;
+    margin: 7rem 0 1rem 0;
   }
   .container-fluid .media img {
     width: 20vw;
@@ -93,6 +109,19 @@
     margin: 0.5rem auto;
     font-family: "Roboto", sans-serif;
   }
+  .container-fluid .media .form-control .card .pLogo .card-body .allLable {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 4;
+  }
+  .container-fluid .media .form-control .card .pLogo .card-body .form-control-sm {
+    text-align: start;
+  }
+  .container-fluid .media .form-control .card .pLogo .card-body #btn {
+    text-align: center;
+    background-color: #E38B29;
+    color: white;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 481px) {
   body {
@@ -105,7 +134,7 @@
     display: flex;
     align-items: center;
     padding: 1rem;
-    margin: 0.8rem 0 1rem 0;
+    margin: 7rem 0 1rem 0;
   }
   .container-fluid .media img {
     width: 25vw;
@@ -117,5 +146,18 @@
   }
   .container-fluid .card .card-body .card-text {
     font-family: "Roboto", sans-serif;
+  }
+  .container-fluid .card .card-body .card-text .allLable {
+    text-align: end;
+    font-size: 0.8rem;
+    line-height: 4;
+  }
+  .container-fluid .card .card-body .card-text .form-control-sm {
+    text-align: start;
+  }
+  .container-fluid .card .card-body .card-text #btn {
+    text-align: center;
+    background-color: #E38B29;
+    color: white;
   }
 }/*# sourceMappingURL=contact.component.css.map */

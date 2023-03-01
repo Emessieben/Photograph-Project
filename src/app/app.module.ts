@@ -14,6 +14,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CustomersComponent } from './customers/customers.component';
 import { AwardsComponent } from './awards/awards.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     CustomersComponent,
     AwardsComponent,
     GalleryComponent,
+    PricingComponent,
     
   ],
   imports: [
