@@ -14,7 +14,7 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 })
 export class ContactComponent {
   myInfo: Array<IPhotograph> = photograph;
-  newCustomer: Array<ICustomer> = [];
+  newCustomer: ICustomer = {} as ICustomer;
 
   constructor() {
     
@@ -31,7 +31,7 @@ export class ContactComponent {
   onSubmit() {
     if (this.myFormG.valid) {
       let myVal: any = this.myFormG.value;
-      this.newCustomer.push(myVal);
+      this.newCustomer= myVal;
       // console.log(myVal);
       this.myFormG.reset();
     }
