@@ -55,10 +55,10 @@
                                         </h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body" *ngFor="let value of newCustomer">
-                                        <p>Dear {{ value.fName }}, </p>
+                                    <div class="modal-body">
+                                        <p>Dear {{ newCustomer.fName }}, </p>
                                         <p>Thank you for your registration.</p>
-                                        <p>I'll get back to you within 48 hours via Your Email {{ value.email }} or your Phone Number {{ value.phone }}. </p>
+                                        <p>I'll get back to you within 48 hours via Your Email {{ newCustomer.email }} or your Phone Number {{ newCustomer.phone }}. </p>
                                         <p>Your {{ info.fName }} </p>
                                     </div>
                                     <div class="modal-footer">
